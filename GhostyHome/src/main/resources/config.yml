@@ -1,0 +1,41 @@
+# ============================================================
+#                    GhostyHome Config
+# ============================================================
+
+# Language selection
+# Available by default: de_DE, en_EN
+# You can add custom language files in the /lang/ folder.
+language: de_DE
+
+# Default maximum number of homes per player.
+# Permission nodes (ghostyhome.homes.<n>) override this value.
+default-max-homes: 5
+
+# ---- Storage ----------------------------------------------------------------
+# Choose between: yml  or  mysql
+storage: yml
+
+mysql:
+  host: localhost
+  port: 3306
+  database: ghostyhome
+  username: root
+  password: ""
+
+# ---- Teleport protection ----------------------------------------------------
+teleport:
+  # Warmup time in seconds before teleporting. Set to 0 for instant.
+  warmup: 3
+
+  # Cancel warmup if the player moves during the countdown.
+  cancel-on-move: true
+
+  # Cancel warmup if the player takes any damage during the countdown.
+  cancel-on-damage: true
+
+  # Seconds a player must wait after taking ANY damage before teleporting.
+  # Covers: fall damage, fire, lava, void, explosions, melee, projectiles, etc.
+  damage-cooldown: 5
+
+  # Seconds a player must wait after being hit BY ANOTHER PLAYER (PvP).
+  combat-cooldown: 10

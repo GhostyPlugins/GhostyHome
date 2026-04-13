@@ -1,0 +1,66 @@
+# ============================================================
+#              GhostyHome – Sprachdatei (de_DE)
+# ============================================================
+# Farbcodes: & (z.B. &a, &l) sowie Hex-Codes (&#RRGGBB, {#RRGGBB}, <#RRGGBB>)
+# Platzhalter: {0}, {1}, {2}, ...
+
+prefix: "&#5865F2&lGhosty&fHome &8» &r"
+
+error:
+  no-permission:    "&cDu hast keine Berechtigung dafür."
+  player-only:      "&cDieser Befehl kann nur von Spielern ausgeführt werden."
+  player-not-found: "&cSpieler &e{0} &cwurde nicht gefunden."
+
+cmd:
+  home:
+    teleported: "&#5865F2Du wurdest zu deinem Home &e{0} &r&#5865F2teleportiert."
+    not-found:  "&cDas Home &e{0} &cwurde nicht gefunden."
+    no-homes:   "&cDu hast noch keine Homes gesetzt. Benutze &e/sethome&c."
+
+  sethome:
+    success:       "&#5865F2Home &e{0} &r&#5865F2wurde erfolgreich gesetzt."
+    updated:       "&#5865F2Home &e{0} &r&#5865F2wurde aktualisiert."
+    max-reached:   "&cDu hast das Maximum von &e{0} &cHomes erreicht."
+    invalid-name:  "&cUngültiger Name! Erlaubt sind: Buchstaben, Zahlen, &e_&c und &e-&c."
+    name-too-long: "&cDer Name ist zu lang! Maximum: &e{0} &cZeichen."
+
+  delhome:
+    success: "&#5865F2Home &e{0} &r&#5865F2wurde erfolgreich gelöscht."
+    usage:   "&cBenutzung: &e/delhome <Name>"
+
+  reload:
+    success: "&#5865F2Plugin erfolgreich neu geladen."
+
+  teleport:
+    warmup:           "&#5865F2Teleportiere zu &e{1} &r&#5865F2in &e{0} &r&#5865F2Sekunden... Nicht bewegen!"
+    cancelled-move:   "&cTeleportation abgebrochen &7– &cDu hast dich bewegt!"
+    cancelled-damage: "&cTeleportation abgebrochen &7– &cDu hast Schaden erhalten!"
+    damage-cooldown:  "&cDu kannst dich noch &e{0}s &cnicht teleportieren &7(Schadens-Cooldown)&c."
+    combat-cooldown:  "&cDu kannst dich noch &e{0}s &cnicht teleportieren &7(Kampf-Cooldown)&c."
+
+  storage:
+    mysql-connected:    "&#5865F2MySQL Verbindung erfolgreich hergestellt."
+    mysql-failed:       "&cMySQL Verbindung fehlgeschlagen! Fallback auf &eYML&c."
+    mysql-disconnected: "&7MySQL Verbindung getrennt."
+
+gui:
+  title:                     "&#5865F2&lDeine Homes"
+  admin-title:               "&#5865F2&lHomes von &e{0}"
+  admin-player-select-title: "&#5865F2&lSpieler auswählen"
+
+  prev-page: "&7« Vorherige Seite"
+  next-page: "&7Nächste Seite »"
+  page-info: "&#5865F2Seite &e{0} &r&#5865F2/ &e{1}"
+
+  filler-name: " "
+
+  home-item-name:        "&#5865F2&l{0}"
+  home-item-world:       "&7Welt: &f{0}"
+  home-item-coords:      "&7Koordinaten: &f{0} &7/ &f{1} &7/ &f{2}"
+  click-to-tp:           "&eklick &7→ Teleportieren"
+  shift-click-to-delete: "&cShift+Klick &7→ Löschen"
+  admin-click-to-tp:     "&eklick &7→ Zu diesem Home teleportieren"
+
+  admin-player-name:   "&e{0}"
+  admin-player-homes:  "&7Homes: &f{0}"
+  admin-click-to-view: "&eklick &7→ Homes ansehen"
